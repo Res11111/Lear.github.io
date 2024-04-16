@@ -922,13 +922,13 @@ section,
 # Services Section
 --------------------------------------------------------------*/
 .services {
-  --background-color: rgba(var(--accent-color-rgb), 0.03);
+  --background-color: rgba(250, 250, 164, 0.3);
 }
 
 .services .service-item {
   box-shadow: 0px 5px 90px 0px rgba(var(--default-color-rgb), 0.1);
   background-color: var(--contrast-color);
-  padding: 50px 30px;
+  padding: 50px 50px;
   transition: all ease-in-out 0.4s;
   height: 100%;
 }
@@ -941,6 +941,7 @@ section,
   color: var(--accent-color);
   font-size: 36px;
   transition: 0.3s;
+ 
 }
 
 .services .service-item h4 {
@@ -961,7 +962,7 @@ section,
 }
 
 .services .service-item:hover {
-  transform: translateY(-10px);
+  transform: translateX(-20px);
 }
 
 .services .service-item:hover h4 a {
