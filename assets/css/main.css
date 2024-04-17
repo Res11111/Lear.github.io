@@ -1085,7 +1085,7 @@ section,
 # Faq Section
 --------------------------------------------------------------*/
 .faq {
-  --background-color: rgba(var(--accent-color-rgb), 0.03);
+  --background-color: rgba(250, 250, 164, 0.3);
 }
 
 .faq .faq-container .faq-item {
@@ -1169,126 +1169,18 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team {
-  --default-color: #ffffff;
+  --default-color: #502020;
   --default-color-rgb: 255, 255, 255;
 }
 
-.team .section-title {
-  color: var(--heading-color);
-}
-
-.team .member {
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .member-info {
-  opacity: 0;
-  position: absolute;
-  inset: 0;
-  transition: 0.2s;
-}
-
-.team .member .member-info-content {
-  position: absolute;
-  left: 50px;
-  right: 0;
-  bottom: 0;
-  transition: bottom 0.4s;
-}
-
-.team .member .member-info-content h4 {
-  color: var(--contrast-color);
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-.team .member .member-info-content span {
-  font-style: italic;
+.img-center{
   display: block;
-  font-size: 13px;
+  margin: 0 auto; /* 圖片水平置中 */
+  max-width: 50%; /* 最大寬度為父元素的 50% */
 }
-
-.team .member .social {
-  position: absolute;
-  left: -50px;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  transition: left ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  display: block;
-  color: var(--default-color);
-  margin-top: 15px;
-}
-
-.team .member .social a:hover {
-  color: var(--accent-color);
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.team .member:hover .member-info-content {
-  bottom: 30px;
-  transition: bottom 0.4s;
-}
-
-.team .member:hover .social {
-  left: 0;
-  transition: left ease-in-out 0.3s;
-}
-
-/*--------------------------------------------------------------
-# Clients Section
---------------------------------------------------------------*/
-.clients {
-  --background-color: rgba(var(--accent-color-rgb), 0.03);
-}
-
-.clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.clients .swiper-wrapper {
-  height: auto;
-}
-
-.clients .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background-color: rgba(var(--default-color-rgb), 0.2);
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+.text-center{
+text-align: center;
+margin-top: 100px;
 }
 
 /*--------------------------------------------------------------
